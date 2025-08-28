@@ -22,5 +22,9 @@ body = parsed_email.get_payload()
 # Output the parsed details
 print("Subject:", subject)            # Output: Subject: Test Email
 print("From:", from_address)          # Output: From: sender@example.com
+from_domain = from_address.split('@')[1]
+print("From Domain:", from_domain)
 print("To:", to_address)              # Output: To: recipient@example.com
+to_domain = to_address.split('@')[1]
+print("To Domain:", to_domain)
 print("Body:", body)                  # Output: Body: This is the body of the email.
